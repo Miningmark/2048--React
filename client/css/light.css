@@ -1,0 +1,73 @@
+#maindiv{
+    background-color: white;
+
+}
+
+.modal{
+    background-color: aliceblue;
+}
+
+.pos0, .pos1, .pos2{
+    color: blue;
+}
+
+/* On mouse-over */
+.btn:hover {
+    background: rgb(209, 205, 205);
+}
+
+.zahl0{
+    background: rgb(245, 241, 241);
+}
+
+.zahl2{
+    background: rgb(216, 202, 202);
+}
+
+.zahl4{
+    background: rgb(223, 213, 192);
+}
+
+.zahl8{
+    background: rgb(218, 177, 125);
+}
+
+.zahl16{
+    background: rgb(196, 155, 80);
+}
+
+.zahl32{
+    background: rgb(194, 140, 90);
+}
+
+.zahl64{
+    background: rgb(190, 175, 87);
+}
+
+.zahl128{
+    background: rgb(185, 165, 49);
+}
+
+.zahl256{
+    background: rgb(159, 197, 98);
+}
+
+.zahl512{
+    background: rgb(134, 189, 61);
+}
+
+.zahl1024{
+    background: rgb(90, 177, 162);
+}
+
+.zahl2048{
+    background: rgb(54, 165, 173);
+}
+
+.zahl4096{
+    background: rgb(114, 107, 184);
+}
+
+.zahl8192{
+    background: rgb(50, 33, 128);
+}

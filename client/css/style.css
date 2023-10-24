@@ -1,0 +1,164 @@
+#maindiv{
+    width: 100%;
+    display: flex;
+
+}
+
+#info{
+    width: 30%;
+    height: 95vh;
+    margin: 10px;
+    
+
+}
+
+#game{
+    width: 40%;
+    height: 95vh;
+    margin: 10px;
+    
+
+}
+
+#leaderboard{
+    width: 30%;
+    height: 95vh;
+    margin: 10px;
+    overflow-y: scroll;
+}
+
+#settings, #gameVertical{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#leaderboardList-wrapper{
+    text-align: center;
+}
+#leaderboardList{
+    padding-left: 0px;
+    list-style-type:none;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+#playgound{
+    margin:-1%;
+    padding:20px;
+}
+
+.square{
+    float: left;
+    margin: 1%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+.square3{
+    width: 31.33%;
+}
+.square4{
+    width: 23%;
+}
+.square5{
+    width: 18%;
+}
+.square6{
+    width: 14.66%;
+}
+
+#centerBTN{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.modal-container{
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal{
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.modal h1{
+    margin: 0;
+}
+
+
+.pos0{
+    font-size: x-large;
+}
+
+.pos1{
+    font-size: larger;
+}
+
+.pos2{
+    font-size: large;
+}
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="styleColor" rel="stylesheet" href="css/dark.css">
+    <link id="mainstylesheet" rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <title>2048 React</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div id="maindiv">
+        <div id="info">
+            <div id="settings">
+                <div id="centerBTN">
+                    <h1>2048</h1>
+                    <h2>BOARD SIZE</h2>
+                    <button id="btnSize" class="btn default">4x4</button><br>
+                    <h2>SETTINGS</h2>
+                    <h3>AUDIO</h3>
+
+                    <audio id="audio" ></audio>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="volume">
+                    </div>
+                    <div>
+                        <button id="btnLast" class="btn default">  <img class="icon" src="img/skip-previous.png">  </button>
+                        <button id="btnPause" class="btn default">  <img class="icon" id="btnPauseIcon" src="img/play.png"> </button>
+                        <button id="btnNext" class="btn default">  <img class="icon" src="img/skip-next.png"> </button>
+                    </div>
+                        
+                    <h3>VIDEO</h3>
+                    <button id="btnVideo" class="btn default">light-mode</button><br>
+                    <h2>SAVEGAME</h2>
+                    <button id="btnSave" class="btn default">SAVE</button><br>
+                    <button id="btnNewGame" class="btn default">NEW GAME</button><br><br><br>
+                    <button id="btnAbout" class="btn default">ABOUT</button>
+                </div>
+            </div>
+        </div>
+        <div id="game">
+            <div id="gameVertical">
+                    <h2 id="nameTag" >Name</h2>
+                    <div id="playground"></div>
+            </div>
+        </div>
+        <div id="leaderboard">
+            <h1>Leaderboard</h1>
+            <h3 id="leaderboardInfo">4x4 Grid</h3>
+            <div id="leaderboardList-wrapper">
+                <ul id="leaderboardList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" id="modal-container-About">
+        <div class="modal">
+            <h1>About</h1>
+            <p>This game is created as an exercise in using MySQL databases and Node.js. </p>
+            <h2>Resources</h2>
+            <ul>
+                <li>jQuery Libarary for easier DOM navigation and manipulatio</li>
+                <li>node.js as the backend framework</li>
+                <li>MySQL for the data storage</li>
+                <li><a href="https://www.musicfox.com/info/kostenlose-gemafreie-musik.php" target="_blank">The music is from musicfox.com</a></li>
+            </ul>
+            <button id="modalCloseAbout">Schließen</button>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-container-Game">
+        <div class="modal">
+            <h1>Game controls</h1>
+            <h3>Press the arrow keys to move the tiles (number fields). All tiles then move to the side and adjacent tiles with the same value add up to a "new" tile.</h3>
+            <button id="modalCloseGame">Schließen</button>
+        </div>
+    </div>
+    
+    <script src="js/client.js"></script>
+    <script src="js/audioPlayer.js"></script>
+    
+    
+    
+
+</body>
+</html>
